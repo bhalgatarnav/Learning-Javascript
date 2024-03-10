@@ -6,7 +6,7 @@
    This method is to write the following code in the HTML document:
   ```
   <script> // Write the js lines in the html document </script>
-  <script src=".\ *filename*"> // This statement links the script file to the html document </script> 
+  <script src=".\ filename"> // This statement links the script file to the html document </script> 
   ```
   The above practice loads JavaScript is that browser stops rendering when JavaScript is encountered. Javacript is then executed before the rendering continues. Often referred to as the       content blocking.
 
@@ -15,4 +15,11 @@
   JS excecution&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-------->
 
 
- #
+## async and defer method:
+  `async` and `defer` are the keywords in the java script language.<br/><br/>
+  `async` <br/>
+  Browser downloads JavaScript in parallel while the HTML renders. When the JavaScript is fully loaded the rendering stops while the JavaScript is excecuted.<br/>
+  
+  HTML ---------------->&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-------><br/>
+  JS download &emsp; -------><br/>
+  JS excecution&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-------->
