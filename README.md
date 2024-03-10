@@ -17,9 +17,16 @@
 
 ## async and defer method:
   `async` and `defer` are the keywords in the java script language.<br/><br/>
-  `async` <br/>
+  `<script src=".\ filename" async> <script>` <br/>
   Browser downloads JavaScript in parallel while the HTML renders. When the JavaScript is fully loaded the rendering stops while the JavaScript is excecuted.<br/>
   
   HTML ---------------->&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-------><br/>
   JS download &emsp; -------><br/>
   JS excecution&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-------->
+
+ `<script src=".\ filename" defer> <script>` <br/>
+  Browser downloads JavaScript in parallel while the HTML renders. When the JavaScript is fully loaded the tool defers the execution of the file until the HTML renders.<br/>
+  
+  HTML -------------------------------><br/>
+  JS download &emsp; -------><br/>
+  JS excecution&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-------->
