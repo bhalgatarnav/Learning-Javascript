@@ -30,3 +30,9 @@
   HTML -------------------------------><br/>
   JS download &emsp; -------><br/>
   JS excecution&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-------->
+
+  
+## Importing functions & saving Javascript modules and importing them.
+  The length of code can be significantly improved by using and saving different objects in different files and then importing them. The editing and finding error becomes a lot more easier this way.<br/>
+  
+  ``` import objectName from ".\ filename.js"; ```
