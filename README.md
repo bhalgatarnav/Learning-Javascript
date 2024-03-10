@@ -5,8 +5,8 @@
  # The default method:
   This method loads JavaScript is that browser stops rendering when JavaScript is encountered. Javacript is then executed before the rendering continues. Often referred to as the content blocking.
 
-  HTML ------------>____________________------------------>
-  JS download_______--------->_____________________
-  JS excecution_______________--------->___________
+  HTML ------------>                   ------------------>
+  JS download        --------->
+  JS excecution               -------->
 
  #
