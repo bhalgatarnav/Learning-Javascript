@@ -1,5 +1,7 @@
 // Making objects in Javascript.
 var days = 0;
+// Objects are generally constants, we can change the properties inside the container,
+// but we cannot remove or replace the object inside the container.
 const room = {
     name: "Morgens:- 909",
     numRoomates: 3,
@@ -17,12 +19,14 @@ const room = {
 
     },
     timeSinceLastClean: days,
-    
+
+// functions typically perform actions on the properties of the object. Following are the two methods to create a function.
+// Properties with functions are called methods. Example: cleanRoom, notCleanRoom etc.
     cleanRoom: function(){
         this.section.bathroom.isClean = true;
-        this.timeSinceLastClean = 0;
+        days = 0;
     },
-    notCleanRoom: function(){
+    notCleanRoom(){
         days++;
     }
 

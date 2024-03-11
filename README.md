@@ -32,7 +32,50 @@
   JS excecution&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-------->
 
   
-## Importing functions & saving Javascript modules and importing them.
-  The length of code can be significantly improved by using and saving different objects in different files and then importing them. The editing and finding error becomes a lot more easier this way.<br/>
+## Importing & saving Javascript modules and importing them.
+  Modules enable modularization of code where individual functions, components, data objects, and other parts can be separated into individual files. The length of code can be significantly improved by using and saving different objects in different files and then importing them. The editing and finding error becomes a lot more easier this way.<br/>
   
   ``` import objectName from ".\ filename.js"; ```
+
+  A property name in javascript can only contain letters, digits, dollar signs and underscores. However,
+  nothing prevents you from using or creating such property names.
+
+ ### Objects
+
+  Dot Notation:
+  `objectName.propertyName;` will let you to access that specific property instead of the whole object.
+  You can dig in the object as much as you want using the dot operator. Easy to read and understand.
+
+```
+var query = propertyName;
+// This code with the dot notation will not work with variable or non-standard names. This line 
+// of code will throw an error.
+// console.log("The specific property is:", objectName.query);
+
+// On the other hand the bracket notation will work with the variables and non-standard names.
+console.log("The specific property is:", objectName["query"]);
+
+```
+
+  Bracket notation:
+  In some cases you need more control, say variables or the property name is non-standard for some reason.
+  `objectName["propertyName"];`In this format the property name is treated as string therefore the non-standard names work as well. 
+
+ ### Methods (Properties with Functions)
+  Properties inside the objects with functions are called as methods. They perform actions on the objects or their properties. There are two ways of initialising the functions:
+
+  ```
+  const objectName = {
+  propertyName(){....},
+  propertyName: function(parameter1){.....},
+  }
+  ```
+
+  Running/ Calling the Methods or the functions.
+  ```
+  objectName.propertyName()
+  ```
+## Console logging
+  ```console.log(objectName)```
+  ```console.log("Entering the string: ", objectName)```
+  The above statement will directly display the entered object name in the console.
