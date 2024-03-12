@@ -99,3 +99,24 @@ console.log("The specific property is:", objectName["query"]);
   ```console.log(objectName)```
   ```console.log("Entering the string: ", objectName)```
   The above statement will directly display the entered object name in the console.
+
+
+## Using JavaScript to inject new content into the document.
+
+ ### Template Literals
+
+  Bridging the gap between what happens in the JavaScript world and the HTML, JS purposes to generate, modify or remove the HTML from a live document in the browser.
+
+  Two backticks '``' in the javascript documentation tells the browser that anything inside here is a template literal. Meaning we can mix the HTML and strings with js expressions to literally create templates.
+  Inside of the template literal, anytime you want to call in something produced by JavaScript, we add a placeholder `${}`. we can write any js code inside those curly brackets.
+
+  ```
+  const template =
+  ` <h1>Any Text ${ }</h1>
+  `;
+  // IMPORTANT:
+  // This statement lets you to access the html content.
+  document.html.innerHTML = template;
+
+
+  ```

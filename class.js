@@ -23,6 +23,8 @@ const UC_room = class {
         storage,
         isClean,
         isOccupied,
+        // sample format: December 1, 2016 12:00:00 IST
+        dateOfArrival,
         timeSinceLastClean
     )
     {
@@ -43,14 +45,29 @@ const UC_room = class {
 
         }
         this.timeSinceLastClean = timeSinceLastClean;
+        this.dateOfArrival = dateOfArrival;
     }
     cleanRoom(){
         this.section.bathroom.isClean = true;
         this.timeSinceLastClean = 0;
     }
-    notCleanRoom(){
+    // other method to create a function.
+    notCleanRoom = function(){
         this.timeSinceLastClean++;
     }
-}
 
+    ageSincePurchase(){
+        let now = new Date();
+        let arrivalDate = new Date(this.dateOfArrival);
+/**
+ * `new Date()` is a global object and is available to use in the browser anytime.
+ *  this very function calculated the time elapsed since 1 January 1970 UTC. 
+ */
+        let elapsed = now - arrivalDate;
+        let ageOfRoom = Math.floor(elapsed / (1000 * 60 * 60 * 24));
+        return ageOfRoom
+
+    }
+
+}
 export default UC_room;
