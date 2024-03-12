@@ -85,13 +85,16 @@ console.log("The specific property is:", objectName["query"]);
   objectName.propertyName()
   ```
  ### Classes (Template for objects)
-  Classes provide a blueprint for the objects. Anytime you create an object from the class the object automatically gets all the properties and methods from that class.
+  Classes provide a blueprint for the objects its properties and the methods. Anytime you create an object from the class the object automatically gets all the properties and methods from that class.
 
   Creating class
   ```
   class Name{.....}
   const Name = class{.....}
   ```
+
+  `constructor()` defines the parameters for the class. All the methods can be initialized like normal methods.
+  
 ## Console logging
   ```console.log(objectName)```
   ```console.log("Entering the string: ", objectName)```
