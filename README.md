@@ -103,6 +103,23 @@ console.log("The specific property is:", objectName["query"]);
 
 ## Using JavaScript to inject new content into the document.
 
+ ### Standdard Strings
+  This is the classic way of outputting the contents using plain old strings. Use string concatenation (Breaking the string in peices ). This is not the efficient way as it has a lot of clutter.e
+  
+  ```
+  /**
+  * The string is directly outputed on the page 
+  */
+  const content = "<h1> Display the contents</h1>";
+  document.body.innerHTML = content;
+  
+  /**
+  * To interact and change the values of the string 
+  */
+  
+  const content = "<h1>" + objectName.propertyName + "</h1>";
+  document.body.innerHTML = content;
+  ```
  ### Template Literals
 
   Bridging the gap between what happens in the JavaScript world and the HTML, JS purposes to generate, modify or remove the HTML from a live document in the browser.
@@ -112,11 +129,14 @@ console.log("The specific property is:", objectName["query"]);
 
   ```
   const template =
-  ` <h1>Any Text ${ }</h1>
+  ` <h1>Any Text ${objectName.propertyName}</h1>
   `;
   // IMPORTANT:
   // This statement lets you to access the html content.
-  document.html.innerHTML = template;
+  document.body.innerHTML = template;
 
 
   ```
+
+# DOM (Document Object Model)
+ Similar to how we create a logical hirarchy in the real world to reach the final object. The browser will traverse the HTML document and then create a Document Object Model that presents the horarchy of how elements interact with each other. 

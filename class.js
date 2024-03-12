@@ -23,9 +23,10 @@ const UC_room = class {
         storage,
         isClean,
         isOccupied,
+        timeSinceLastClean,
         // sample format: December 1, 2016 12:00:00 IST
-        dateOfArrival,
-        timeSinceLastClean
+        dateOfArrival
+
     )
     {
         // this is a keyword for showcasing the use and referencing the current object.
