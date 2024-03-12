@@ -35,7 +35,16 @@
 ## Importing & saving Javascript modules and importing them.
   Modules enable modularization of code where individual functions, components, data objects, and other parts can be separated into individual files. The length of code can be significantly improved by using and saving different objects in different files and then importing them. The editing and finding error becomes a lot more easier this way.<br/>
   
-  ``` import objectName from ".\ filename.js"; ```
+  ```
+  // Wrtiting this in HTML file.
+  <script type="module" src="./fileName"></script> 
+  
+  // Write this in the JavaScript file.
+  import objectName from ".\ filename.js"; 
+
+  // Writing export command in the exporting file.
+  export default objectName;
+  ```
 
   A property name in javascript can only contain letters, digits, dollar signs and underscores. However,
   nothing prevents you from using or creating such property names.
@@ -74,6 +83,14 @@ console.log("The specific property is:", objectName["query"]);
   Running/ Calling the Methods or the functions.
   ```
   objectName.propertyName()
+  ```
+ ### Classes (Template for objects)
+  Classes provide a blueprint for the objects. Anytime you create an object from the class the object automatically gets all the properties and methods from that class.
+
+  Creating class
+  ```
+  class Name{.....}
+  const Name = class{.....}
   ```
 ## Console logging
   ```console.log(objectName)```
