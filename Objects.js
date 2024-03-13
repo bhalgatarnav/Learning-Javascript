@@ -1,5 +1,5 @@
-import UC_room from "./class";
-const room509 = new Room(
+import UC_room from "./class.js";
+const room509 = new UC_room(
     "Deacon:- 509",
     4,
     ["Pradnyesh", "Vedant", "JT", "Evan"],
@@ -11,7 +11,6 @@ const room509 = new Room(
     3,
     "August 14, 2023 12:00:00 EST"
 )
-
 
 console.log("Testing the Class created:", room509)
 

@@ -148,6 +148,65 @@ MDN Documents: `https://developer.mozilla.org/en-US/docs/Web/API/Element/classLi
 
  All of these commands use CSS queries to retrieve the elements.
 
-## Modifying the element classes
-`Element.className`, `Element.classList` sreves the purpose of returning the class names of the elements.
-`https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByClassName` 
+## Attributes. 
+Purpose: Attributes provide a way to customize and configure HTML elements beyond their basic structure and content. They can affect how elements are displayed, behave, or interact with other elements.
+
+Structure: Attributes are placed within the opening tag of an element, after the element name. They follow the format name="value", where name is the attribute name and value is the specific value assigned to that attribute.
+Types of attributes: There are two main types of attributes:
+
+Global attributes: These attributes can be applied to almost all HTML elements. Examples include `id`, `class`, `style`, and `title`.
+
+Specific attributes: These attributes are specific to certain HTML elements and define their unique characteristics. For example, the `src` attribute is specific to the `<img>` element and specifies the image source.
+
+Find the specific element and then the commands can be used.
+
+```
+
+// returns all the attributes of the element.
+document.querySelector("#element).attribute
+
+/** returns if the elements has the specified attribute.
+* https://developer.mozilla.org/en-US/docs/Web/API/Element/hasAttribute
+*/
+
+document.querySelector("#element).hasAttribute()
+
+
+```
+## Modifying the class Attributes
+
+Purpose of the class Attribute in HTML Tags:
+
+The class attribute in HTML tags is used to assign one or more CSS classes to an element. These classes act as identifiers that allow you to target specific elements and apply CSS styles to them.
+
+
+Styling Multiple Elements: You can assign the same class to multiple elements, allowing you to apply the same styles to all of them at once. This saves time and effort compared to styling each element individually.
+
+Example:
+```
+<h1 class="main-heading">Welcome to My Website</h1>
+<p class="intro-text">This is an introductory paragraph.</p>
+```
+
+Html
+In this example, the h1 element has the class main-heading, and the p element has the class intro-text. You can then define CSS rules for these classes in your stylesheet:
+```
+.main-heading {
+  font-size: 2em;
+  color: #333;
+}
+
+.intro-text {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+```
+The classes can be modified my following methods in `JavaScript` on the elements: 
+
+The `className` property of the Element interface gets and sets the value of the class attribute of the specified element.
+
+The `Element.classList` is a read-only property that returns a live DOMTokenList collection of the class attributes of the element. This can then be used to manipulate the class list.
+
+Although the classList property itself is read-only, you can modify its associated DOMTokenList using the `add()`, `remove()`, `replace()`, and `toggle()` methods.
+
+You can test whether the element contains a given class using the `classList.contains()` method.

@@ -15,14 +15,13 @@
 const UC_room = class {
     
     constructor(
-        name,
-        numRoomates,
+        _name,
+        _numRoomates,
         roomates,
-        isOccupied,
-        isStoveOn,
+        is_Occupied,
+        is_StoveOn,
         storage,
         isClean,
-        isOccupied,
         timeSinceLastClean,
         // sample format: December 1, 2016 12:00:00 IST
         dateOfArrival
@@ -30,18 +29,18 @@ const UC_room = class {
     )
     {
         // this is a keyword for showcasing the use and referencing the current object.
-        this.name = name;
-        this.numRoomates = numRoomates;
+        this._name = _name;
+        this._numRoomates = _numRoomates;
         this.roomates = roomates;
-        this.isOccupied = isOccupied;
+        this.is_Occupied = is_Occupied;
         this.section = {
             kitchen : {
-                isStoveOn : isStoveOn,
+                is_StoveOn : is_StoveOn,
                 storage : storage
             },
             bathroom : {
                 isClean : isClean,
-                isOccupied : isOccupied
+                is_Occupied : is_Occupied
             } 
 
         }
