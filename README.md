@@ -140,3 +140,14 @@ console.log("The specific property is:", objectName["query"]);
 
 # DOM (Document Object Model)
  Similar to how we create a logical hirarchy in the real world to reach the final object. The browser will traverse the HTML document and then create a Document Object Model that presents the horarchy of how elements interact with each other. 
+MDN Documents: `https://developer.mozilla.org/en-US/docs/Web/API/Element/classList`
+
+ `document.querySelectorAll()`, `document.querySelector` these methods can return the specific elements or objects that you are looking for. The `document.querySelectorAll()` method returns the elements as an array. You can then change the elements in the console to experiment with the elements.
+
+ Another set of commands is, `getElementsByClassName()`, `getElementsById()` these are old commands that were used before the query selctor commands were implemented. 
+
+ All of these commands use CSS queries to retrieve the elements.
+
+## Modifying the element classes
+`Element.className`, `Element.classList` sreves the purpose of returning the class names of the elements.
+`https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByClassName` 
