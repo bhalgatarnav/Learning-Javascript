@@ -1,3 +1,52 @@
+# Table of Contents for ReadMe.md
+1. # Introduction
+* Purpose of the repository
+* Learning goals
+
+2. # Modern Ways to Load JavaScript
+* Default method and its limitations
+* async and defer attributes
+* Comparison of loading methods
+
+3. # Importing and Saving JavaScript Modules
+* Benefits of modularization
+* Syntax for importing and exporting modules
+
+4. # JavaScript Fundamentals
+* Property names and conventions
+* Objects and property access (dot notation and bracket notation)
+* Methods (properties with functions)
+* Classes as blueprints for objects
+* constructor() and method initialization
+
+5. # Console Logging
+* Using console.log() for debugging and output
+
+6. # Injecting Content into the Document
+* Standard strings vs. template literals
+* Using template literals to combine HTML and JavaScript
+
+7. # DOM (Document Object Model)
+* Understanding the DOM as a hierarchical representation of the document
+* Selecting elements with document.querySelectorAll() and document.querySelector()
+* Other element selection methods (getElementsByClassName(), getElementById())
+
+8. # Attributes
+* Purpose and structure of attributes
+* Types of attributes (global and specific)
+* Accessing and checking attributes with JavaScript
+
+9. # Modifying Class Attributes
+* Purpose of the class attribute
+* Example of using classes for styling
+* Methods for modifying class attributes in JavaScript (className, classList)
+
+10. # Conclusion
+* Summary of key concepts covered
+* Next steps or future learning plans (optional)
+
+
+
 # Learning-Javascript
  This repository is a practice repo made to save all my javascript work and showcase the consistent learning. Referring to the instructions from linkedIn course. I aim to create a fundamental understanding of the language. 
 
