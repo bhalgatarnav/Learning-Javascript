@@ -41,9 +41,9 @@
 * Example of using classes for styling
 * Methods for modifying class attributes in JavaScript (className, classList)
 
-## 10. Conclusion
-* Summary of key concepts covered
-* Next steps or future learning plans (optional)
+## 10. Variables
+* Purpose of the variables and various types. 
+
 
 
 
@@ -259,3 +259,55 @@ The `Element.classList` is a read-only property that returns a live DOMTokenList
 Although the classList property itself is read-only, you can modify its associated DOMTokenList using the `add()`, `remove()`, `replace()`, and `toggle()` methods.
 
 You can test whether the element contains a given class using the `classList.contains()` method.
+
+# Variables
+Variables are fundamental building blocks in JavaScript, serving as named containers to store data. They play a crucial role in:
+
+JavaScript has three main types of variables, each with its own declaration keyword and specific roles:
+
+## var (Function-Scoped or Globally Scoped):
+Declared using the `var` keyword.
+Has **function scope or global scope**, depending on where it's declared.
+Can be reassigned and redeclared within its scope.
+A variable by defalut if not mentioned is declared as a `var` type.
+
+## let (Block-Scoped):
+Declared using the `let` keyword.
+Has block scope, meaning it's **only accessible within the block**  (e.g., if statement, for loop) where it's declared.
+Can be reassigned but not redeclared within its scope.
+Cannot be accessed before declaration.
+Provides better control over variable scope and helps **prevent accidental variable overwrites.**
+
+## const (Block-Scoped and Immutable):
+Declared using the `const` keyword.
+Has **block** scope, similar to let.
+Cannot be reassigned or redeclared after its initial assignment.
+Must be initialized with a value during declaration.
+Ensures that the value of a variable remains constant, preventing accidental modifications and improving code readability.
+
+```
+var a = 5;
+var b = "5";
+var c = "five";
+// statement 1
+if (a == b){
+  console.log("Both the variables a and b contain the same value");
+}
+// statement 2
+if (a == c){
+  console.log("Both the variables a and c contain the same value");
+}
+```
+The above example would result in returning the statement 1. This is beacause the 5 (number) and '5'(string) are treated as same value.
+
+``` 
+var a = "5";
+var b = "145";
+
+var c = a+b;
+var d = b-a;
+console.log("Sum of a and b", c); // output: 5145
+console.log("Subtracting a from b", d); // output: 140
+ ```
+
+All operations except addition can be performed on numerical strings. Thus, if you want to perform addition the variables must be in the numberical format.
