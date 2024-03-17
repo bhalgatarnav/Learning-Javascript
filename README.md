@@ -124,8 +124,21 @@ console.log("The specific property is:", objectName["query"]);
 
   ```
   const objectName = {
+  
+  //  function delcaration method
   propertyName(){....},
-  propertyName: function(parameter1){.....},
+    
+  //  function expression method
+  type propertyName =  function(parameter1){.....},
+
+  // Arrow function
+  type propertyName = (parameter) => {...},
+  //  Immediatly invoked Function Expression Method
+  
+  propertyName(){
+    .....
+  }()
+  // The two brackets will tell the browser to run the function as soon as it encounters it.
   }
   ```
 
@@ -133,6 +146,8 @@ console.log("The specific property is:", objectName["query"]);
   ```
   objectName.propertyName()
   ```
+  JavaScript allows calling the functions prior to their declaration but the arrow functions need to be declared first before calling the function.
+
  ### Classes (Template for objects)
   Classes provide a blueprint for the objects its properties and the methods. Anytime you create an object from the class the object automatically gets all the properties and methods from that class.
 
@@ -311,3 +326,62 @@ console.log("Subtracting a from b", d); // output: 140
  ```
 
 All operations except addition can be performed on numerical strings. Thus, if you want to perform addition the variables must be in the numberical format.
+
+# Arrays
+Arrays are fundamental data structures in JavaScript that allow you to store and manage ordered collections of values. They are essentially lists that can hold any type of data, including numbers, strings, booleans, objects, and even other arrays. **Arrays are created using square brackets** `[]`, and elements are separated by commas.
+
+***Common Array Methods:***
+
+## 1. push():
+
+Adds **one or more elements to the end** of an array.
+Returns the new length of the array.
+Example:
+```
+const fruits = ["apple", "banana"];
+fruits.push("orange"); // fruits now contains ["apple", "banana", "orange"]
+
+```
+
+## 2. unshift():
+
+Adds **one or more elements to the beginning** of an array.
+Returns the new length of the array.
+Example:
+```
+const numbers = [2, 3, 4];
+numbers.unshift(1); // numbers now contains [1, 2, 3, 4]
+```
+## 3. pop():
+
+Removes and returns the last element from an array.
+Example:
+const colors = ["red", "green", "blue"];
+const lastColor = colors.pop(); // lastColor is "blue", colors now contains ["red", "green"]
+content_copy
+Use code with caution.
+JavaScript
+## 4. shift():
+
+Removes and **returns the first element** from an array.
+Example:
+```
+const tasks = ["Learn JavaScript", "Build a website", "Go for a walk"];
+const firstTask = tasks.shift(); // firstTask is "Learn JavaScript", tasks now contains ["Build a website", "Go for a walk"]
+```
+
+## 5. join():
+
+Converts all elements in an array into a string, separated by a specified separator (default is a comma).
+Example:
+```
+const words = ["hello", "world"];
+const sentence = words.join(" "); // sentence is "hello world"
+```
+
+
+* Adding items to a list: Use push() to add items to the end of a list, like adding new products to a shopping cart.
+* Removing items from a list: Use pop() to remove the last item from a list, like removing the last item from a to-do list.
+
+* Creating a queue: Use push() and shift() to implement a first-in, first-out (FIFO) queue.
+* Formatting data: Use join() to format data for display or storage, like converting an array of numbers into a comma-separated string.
