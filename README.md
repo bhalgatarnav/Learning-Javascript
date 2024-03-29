@@ -104,7 +104,7 @@
   `objectName.propertyName;` will let you to access that specific property instead of the whole object.
   You can dig in the object as much as you want using the dot operator. Easy to read and understand.
 
-  ***The equals sign `(=)` is used to assign values to variables, while the colon `(:)` is used to assign values to properties within object literals.***
+  ***The equals sign `(=)` is used to assign values to variables, while the colon `(:)`{} is used to assign values to properties within object literals.***
 
 Next, you might want to learn more about JavaScript objects or try creating more complex objects.
 ```
