@@ -388,3 +388,13 @@ const sentence = words.join(" "); // sentence is "hello world"
 
 * Creating a queue: Use push() and shift() to implement a first-in, first-out (FIFO) queue.
 * Formatting data: Use join() to format data for display or storage, like converting an array of numbers into a comma-separated string.
+
+# DOM Events:
+
+## Event listeners:
+`addEventListener()` listens for events and call backs the specific function when that event is detected. 
+`target.addEventListener(event, callback)`
+
+`target` can be any object be it the DOM object or the window object.
+`event` this can be any event we want to listen to in quotation marks.
+`callback` this can be any function we want to call back or run.
