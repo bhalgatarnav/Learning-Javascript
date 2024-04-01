@@ -330,6 +330,8 @@ console.log("Subtracting a from b", d); // output: 140
 
 All operations except addition can be performed on numerical strings. Thus, if you want to perform addition the variables must be in the numberical format.
 
+***`a = b` assigns the value of b to a. `a == b` tests for equality between a and b `a === b` tests for identical equality between a and b.***
+
 # Arrays
 Arrays are fundamental data structures in JavaScript that allow you to store and manage ordered collections of values. They are essentially lists that can hold any type of data, including numbers, strings, booleans, objects, and even other arrays. **Arrays are created using square brackets** `[]`, and elements are separated by commas.
 
